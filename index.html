@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Quiz</title>
+    <!-- Preconnect to Google Fonts -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Load Google Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
+        <!-- Navigation bar -->
         <nav>
             <div class="topofdisplay">
+                <!-- Leaderboard tab is displayed in the nav -->
                 <div id="leaderboardTab">
                     <h1>Leaderboard</h1>
                 </div>
@@ -20,37 +25,51 @@
         </nav>
     </header>
 
+    <!-- Main content -->
     <main>
+        <!-- Quiz introduction container -->
         <div id="quizintro">
+            <!-- Information about the quiz -->
             <div class="quizinfo">
                 <h1>JavaScript Quiz</h1>
                 <p>Explore your JavaScript expertise in this quiz, designed to challenge your grasp of JavaScript concepts, whether you're an experienced coder or just embarking on your coding journey</p>
+                <!-- Button to start the quiz -->
                 <button id="startBtn">Start Quiz</button>
             </div>
         </div>
+
+        <!-- Container containing the quiz questions and answers [hidden by default]-->
         <div id="quizContainer" style="display: none;">
             <div class="quizcontainer">
+                <!-- Timer display -->
                 <div class="timerDisplay">
                     <h1 id="timer">Time remaining: 60</h1>
                 </div>
+                <!-- Question display -->
                 <h2 id="question">Placeholder</h2>
                 <div class="quiz">
                     <div id="choices">
+                        <!-- Container for choices provided -->
                         <button class="choice">A</button>
                         <button class="choice">B</button>
                         <button class="choice">C</button>
                         <button class="choice">D</button>
                     </div>
+                    <!-- Next button -->
                     <button id="nextBtn">Next</button>
                     <form>
+                        <!-- User input for saving score -->
                         <input type="text" id="userData" placeholder="Please enter your name">
                         <button id="submitBtn">Submit Score</button>
+                        <!-- Home button -->
                         <button id="homeBtn">Home</button>
                     </form>
                 </div>
             </div>
         </div>
 
+
+        <!-- Leaderboard container section -->
         <div id="scoreContainer" style="display: none;">
             <h2 id="leaderboard">JavaScript Quiz Leaderboard</h2>
             <ol id="leaderboardListData"></ol>
@@ -60,5 +79,6 @@
     </main>
 
     <script src="script.js"></script>
+    
 </body>
 </html>
