@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Quiz</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="topofdisplay">
+                <div id="leaderboardTab">
+                    <h1>Leaderboard</h1>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="quizintro">
+            <div class="quizinfo">
+                <h1>JavaScript Quiz</h1>
+                <p>Explore your JavaScript expertise in this quiz, designed to challenge your grasp of JavaScript concepts, whether you're an experienced coder or just embarking on your coding journey</p>
+                <button id="startBtn">Start Quiz</button>
+            </div>
+        </div>
+        <div id="quizContainer" style="display: none;">
+            <div class="quizcontainer">
+                <div class="timerDisplay">
+                    <h1 id="timer">Time remaining: 60</h1>
+                </div>
+                <h2 id="question">Placeholder</h2>
+                <div class="quiz">
+                    <div id="choices">
+                        <button class="choice">A</button>
+                        <button class="choice">B</button>
+                        <button class="choice">C</button>
+                        <button class="choice">D</button>
+                    </div>
+                    <button id="nextBtn">Next</button>
+                    <form>
+                        <input type="text" id="userData" placeholder="Please enter your name">
+                        <button id="submitBtn">Submit Score</button>
+                        <button id="homeBtn">Home</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="scoreContainer" style="display: none;">
+            <h2 id="leaderboard">JavaScript Quiz Leaderboard</h2>
+            <ol id="leaderboardListData"></ol>
+            <button id="clearBtn">Clear Leaderboard</button>
+            <button id="homeBtn2">Home</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
