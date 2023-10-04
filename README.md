@@ -13,6 +13,7 @@
 
 ## Usage
 
+https://kimkristion.github.io/JavaScript-Quiz/?
 ![homescreen](<./images/mainDisplay.png>)
 ![activegame](</images/activeGame.png>)
 ![leaderboard](</images/leaderboard.png>)
